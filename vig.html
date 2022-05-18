@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<head>
+<style>
+div p {
+  background-color: yellow;
+}
+    table {
+  width: 100%;
+  border: 1px solid;
+}
+
+
+    p.test1 {
+  white-space: nowrap; 
+  width: 200px; 
+  border: 1px solid #000000;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+p.test2 {
+  white-space: nowrap; 
+  width: 200px; 
+  border: 1px solid #000000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+h1 {
+  text-shadow: 2px 2px;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+
+div:hover {
+  width: 300px;
+}
+
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+<link rel="stylesheet" href="html.css">
+</head>
+<html>
+    <body>
+        <h2>Cat Photo App</h2>
+        <main>
+            <h3> Cat Photos</h3>
+        
+        <!--  TODO : Add a link -->
+        <p style="color: aqua;"> Click to view <a href="#" 
+            target ="_blank">cat photos</a>.</p>
+
+            <h1 id="pid">Pizza </h1>
+            <h1>Taco Bell
+            </h1>
+        
+        <a href="#" ><img src="https://fcc.im/fcc-relaxing-cat" alt="Small orange cat"></a>
+
+        <h3> Cat Lists</h3>
+        <div class="lists">
+
+            <p>Things cats <em>love</em></p>
+            <ul>
+                <li>catnip</li>
+                <li>lasers</li>
+                <li>food</li>
+            </ul>
+            <img src="lasagna.jpg" alt="Lasagna">
+
+            <p> Things cats <strong>hate</strong></p>
+            <ol>
+                <li>other cats</li>
+                <li>dogs</li>
+                <li>hats</li>
+            </ol>
+        </div>
+
+
+        <form action="/submit-cat-photo">
+            <label for="indoor"><input id="indoor" type=  "radio" name="indoor-outdoor" > Indoor </label>
+            <br>
+            <label for="outdoor"><input id="outdoor" type = "radio" name="indoor-outdoor"> Outdoor</label>
+            <br>
+
+
+            <label for="loving"><input id="loving" type="checkbox" name="personality"> Loving</label>
+            <br>
+            <label for="lazy"><input id="lazy" type="checkbox" name="personality"> Lazy</label>
+            <br>
+            <label for="energetic"><input id="energetic" type="checkbox" name="personality"> Energetic</label>
+            <br>
+
+
+            <input type = "text" placeholder="cat photo URL" required>
+            <br>
+            <button type="submit"> Submit </button>
+        </form>
+    </main>
+    <footer>
+        <p><small>
+            No Copyright <a href="https://freecodecamp.org">freecodecamp.org</a>
+        </p>
+    </footer>
+
+
+
+    <h2>CSS Buttons</h2>
+    
+    <button>Default Button</button>
+    <a href="#" class="button">Link Button</a>
+    <button class="button">Button</button>
+    <input type="button" class="button" value="Input Button">
+
+
+
+<ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+</ul>
+
+<table>
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+    </tr>
+    <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+    </tr>
+    <tr>
+        <td>Lois</td>
+        <td>Griffin</td>
+    </tr>
+</table>
+
+
+<div>
+    <p>Paragraph 1 in the div.</p>
+    <p>Paragraph 2 in the div.</p>
+    <section>
+        <p>Paragraph 3 in the div.</p>
+    </section>
+</div>
+
+
+<form>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="fname">
+</form>
+
+    </body>
+</html>
